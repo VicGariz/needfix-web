@@ -21,7 +21,7 @@ nav { display: flex; justify-content: space-between; align-items: center; }
 /* Hero */
 .hero { 
     height: 70vh; 
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80');
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./img/logo.png');
     background-size: cover; background-position: center;
     display: flex; align-items: center; justify-content: center; text-align: center; color: white;
 }
@@ -51,4 +51,28 @@ nav { display: flex; justify-content: space-between; align-items: center; }
 @media (max-width: 768px) {
     .service-block, .service-block.reverse { flex-direction: column; text-align: center; }
     .hero h1 { font-size: 2rem; }
+}
+/* Ajustes para el logo con imagen */
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 100px; /* Ajusta el tamaño según prefieras */
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.05); /* Efecto sutil al pasar el mouse */
+}
+
+/* Si decides dejar el nombre al lado del logo, usa esto: */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
